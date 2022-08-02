@@ -1,0 +1,32 @@
+.backdrop {
+    &__container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        justify-self: center;
+    }
+    // padding: 15px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    position: fixed;
+    height: 100%;
+    width: 360px;
+    top: 0;
+    left: 0;
+    background-color: white;
+
+    background: rgba(0, 0, 0, 0.2);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+// .backdrop.is-hidden {
+//     opacity: 0;
+//     pointer-events: none;
+// }

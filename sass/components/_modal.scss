@@ -1,0 +1,14 @@
+.modal {
+    justify-content: center;
+    text-align: center;
+    position: relative; 
+    width: 360px;
+    padding: 30px 15px 30px 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #191c26e0, #191c26c9);
+}
+.close__icon {
+    fill: white;
+}

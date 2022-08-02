@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./css/main.min.css">
+  </head>
+  <body>
+<header class="header">
+    <div class="container header__container">
+        <aside class="aside">
+            <a href="./index.html" class="aside__logo">
+                <img src="./img/Logo.svg" alt="logo" class="logo__img">
+            </a>
+            <ul class="aside__list">
+                <li class="aside__item">
+                    <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="aside__link">Instagram</a>
+                </li>
+                <li class="aside__item">
+                    <a href="https://www.youtube.com/" target="_blank" rel="nofollow" class="aside__link">Youtube</a>
+                </li>
+            </ul>
+        </aside>
+        <section class="header__section">
+                        <a href="./index.html" class="aside__logo aside__logo--mobile">
+                <img src="./img/Logo.svg" alt="logo" class="logo__img logo__img--mobile">
+            </a>
+            <div class="header__top">
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#prices" class="nav__link">Services and prices</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#barbers" class="nav__link">Barbers</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contacts" class="nav__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="address">
+                    <li class="address__item">
+                        <a  href="#order" class="address__link">online-booking</a>
+                    </li>
+                    <li class="address__item">
+                        <a href="tel:+380441111111" class="address__link address__link--tel">+38 044 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="header__text">A hair salon for men in Kyiv</p>
+            <h1 class="header__title">BarberShop</h1>
+            <p class="header__info">We are experts in trendy men’s haircuts.
+                We work quickly, carefully and with style.</p>
+            <div class="header__buttons">
+                <button class="header__button">BACK</button>
+                <button class="header__button">FORWARD</button>
+            </div>
+            <button data-modal-open type="button" class="menu__button">
+                <svg class="menu__icon" width="40px" height="40px">
+                    <use href="./img/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>    
+        </section>
+    </div>
+    <div class="backdrop backdrop__container is-hidden" data-modal>
+        <div class="modal">
+            <div class="menu__top">
+                <nav class="menu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#about" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#prices" class="menu__link">Services and prices</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#barbers" class="menu__link">Barbers</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contacts" class="menu__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="menu__address">
+                    <li class="menu__point">
+                        <a  href="#order" class="menu__ink">online-booking</a>
+                    </li>
+                    <li class="menu__point menu__point--tel">
+                        <a href="tel:+380441111111" class="menu__ink menu__ink--tel">+38 044 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+                                <ul class="social social__list social__list--menu">
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-instagram-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin-1-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+            <button data-modal-close type="button" class="close__button">
+                <svg class="close__icon" width="40px" height="40px">
+                    <use href="./img/symbol-defs.svg#icon-close-black"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="about" class="about about__container">
+        <div class="container about__container">
+            <ul class="about__list">
+                <li class="about__item">
+                    <picture>
+                        <source srcset="./img/img1.jpg" media="(min-width: 1280px)">                                
+                        <img src="./img/img1-1.jpg" alt="img1" class="about__img">
+                     </picture>
+                </li>
+                <li class="about__item">
+                    <picture>
+                        <source srcset="./img/img2.jpg" media="(min-width: 1280px)">                                
+                        <img src="./img/img2-1.jpg" alt="img2" class="about__img">
+                     </picture>
+                </li>
+            </ul>
+            <div class="about__box">
+                <p class="about__text">about</p>
+                <h1 class="about__title">Best Barbershop in your city</h1>
+                <p class="about__info">If you want to add more confidence to your image, you should definitely visit us.</p>
+                <p class="about__facts">We are a team that never stops at what has been achieved
+                    and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
+                <button class="about__button">ONLINE-BOOKING</button>   
+            </div>
+        </div>
+    </section>
+    <section id="prices" class="prices">
+        <div class="container prices__container">
+            <p class="prices__text">spend your time with the best masters</p>
+            <h2 class="prices__title">Services and prices</h2>
+            <div class="prices__box">
+                <ul class="prices__list">
+                    <li class="prices__item">
+                        <p class="prices__info">Men’s haircut</p>
+                        <span class="prices__price ">from 300 uah.</span>
+                    </li>
+                    <li class="prices__item">
+                        <p class="prices__info">Beard trim</p>
+                        <span class="prices__price">from 200 uah.</span>
+                    </li>
+                    <li class="prices__item">
+                        <p class="prices__info">Mustache trim</p>
+                        <span class="prices__price ">from 200 uah.</span>
+                    </li>
+                    <li class="prices__item">
+                        <p class="prices__info">Straight razor shave</p>
+                        <span class="prices__price">from 200 uah.</span>
+                    </li>
+                </ul>
+                <ul class="prices__catalog">
+                    <li class="prices__point">
+                        <p class="prices__info">Trainee’s haircut</p>
+                        <span class="prices__price">from 50 uah.</span>
+                    </li>
+                    <li class="prices__point">
+                        <p class="prices__info">Haircut under the nozzle</p>
+                        <span class="prices__price">from 200 uah.</span>
+                    </li>
+                    <li class="prices__point">
+                        <p class="prices__info">Children’s haircut (0-12 y.o.)</p>
+                        <span class="prices__price">from 300 uah.</span>
+                    </li>
+                    <li class="prices__point">
+                        <p class="prices__info">Camouflage of grey hair</p>
+                        <span class="prices__price">from 200 uah.</span>
+                    </li>
+                </ul>
+            </div>
+            <button class="prices__button">ONLINE-BOOKING</button>   
+        </div>
+    </section>
+    <section class="why">
+        <div class="container why__container">
+            <div class="why__box">
+                <p class="why__text">old traditional school</p>
+                <h2 class="why__title">Why people come to us?</h2>
+                <p class="why__info">Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
+            </div>
+            <ul class="why__list">
+                <li class="why__item">
+                    <span class="why__number">600</span>
+                    <p class="why__about">Satisfied customers per day</p>
+                </li>
+                <li class="why__item">
+                    <span class="why__number">20</span>
+                    <p class="why__about">Kyiv’s best barbers</p>
+                </li>
+                <li class="why__item">
+                    <span class="why__number">50</span>
+                    <p class="why__about">Awards for excellent service</p>
+                </li>
+                <li class="why__item">
+                    <span class="why__number">100</span>
+                    <p class="why__about">Gifts for regular customers</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="barbers" class="barbers">
+        <div class="container">
+            <p class="barbers__text">for true enjoyers of the atmosphere</p>
+            <h2 class="barbers__title">Our barbers</h2>
+            <ul class="barbers__list">
+                <li class="barbers__item">
+                    <picture>
+                        <source srcset="./img/img-1-pc.jpg" media="(min-width: 1280px)">                                
+                        <img src="./img/barbers-1.jpg" alt="img1" class="barbers__img">
+                     </picture>
+                    <h3 class="barbers__name">John Smith</h3>
+                    <p class="barbers__info">Extreme Barber</p>
+                    <ul class="social social__list">
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-instagram-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin-1-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="barbers__item">
+                    <picture>
+                        <source srcset="./img/img-2-pc.jpg" media="(min-width: 1280px)">                                
+                        <img src="./img/barbers-3.jpg" alt="img1" class="barbers__img">
+                     </picture>
+                    <h3 class="barbers__name">John Smith</h3>
+                    <p class="barbers__info">Extreme Barber</p>
+                    <ul class="social social__list">
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-instagram-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin-1-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="barbers__item">
+                    <picture>
+                        <source srcset="./img/img-3-pc.jpg" media="(min-width: 1280px)">                                
+                        <img src="./img/barbers-2.jpg" alt="img1" class="barbers__img">
+                     </picture>
+                    <h3 class="barbers__name">John Smith</h3>
+                    <p class="barbers__info">Extreme Barber</p>
+                    <ul class="social social__list">
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-instagram-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="social__link">
+                                <svg class="social__icon">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin-1-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="example">
+        <div class="container example__container">
+            <p class="example__text">in Latin, "barba" means "beard"</p>
+            <h2 class="example__title">Examples</h2>
+            <ul class="example__list">
+                <li class="example__item">
+                    <picture>
+                        <source srcset="./img/ex-1-b.jpg" media="(min-width: 1280px">
+                        <img src="./img/ex-1-m.jpg" alt="exemples" class="example__img">
+                    </picture>
+                </li>
+                <li class="example__item">
+                    <picture>
+                        <source srcset="./img/ex-2-b.jpg" media="(min-width: 1280px">
+                        <img src="./img/ex-2-m.jpg" alt="exemples" class="example__img">
+                    </picture>
+                </li>
+                <li class="example__item">
+                    <picture>
+                        <source srcset="./img/ex-3-b.jpg" media="(min-width: 1280px">
+                        <img src="./img/ex-3-m.jpg" alt="exemples" class="example__img">
+                    </picture>
+                </li>
+                <li class="example__item">
+                    <picture>
+                        <source srcset="./img/ex-4-b.jpg" media="(min-width: 1280px">
+                        <img src="./img/ex-4-m.jpg" alt="exemples" class="example__img">
+                    </picture>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__box">
+            <form id="order" class="form">
+                <h2 class="form__title">Online-booking</h2>
+                <ul class="form__list">
+                    <li class="form__item">
+                        <input class="form__input" type="text" placeholder="name*" name="user-name" title="Слава Україні!">
+                    </li>
+                    <li>
+                        <input 
+                        class="form__input" 
+                        type="tel" 
+                        placeholder="phone*"
+                        name="user-phone" 
+                        title="+38 (000) 000-00-00"
+                        pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+                    </li>
+                </ul>
+                <textarea class="form__textarea" name="message" placeholder="message"></textarea>
+                <button class="form__button">send</button>
+            </form>
+            <div id="contacts" class="footer__address">
+                <div class="contacts__left">
+                    <h2 class="footer__title">Contacts</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link footer__link--map" href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,+7,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.3958107,30.5036017,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c8c951889799:0x58e0259a6e5b738d!8m2!3d50.3958107!4d30.5036017" target="_blank" rel="nofollow">
+                                <svg class="footer__icon" width="24px" height="24px">
+                                    <use href="./img/symbol-defs.svg#icon-map"></use>
+                                </svg>
+                                st. Vasilkovaya, 7A <br> Kiev, 08132
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="" target="_blank">
+                                <svg class="footer__icon" width="24px" height="24px">
+                                    <use href="./img/symbol-defs.svg#icon-phone"></use>
+                                </svg>
+                                +38 044 111 11 11
+                            </a> 
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="" target="_blank">
+                                <svg class="footer__icon" width="24px" height="24px">
+                                    <use href="./img/symbol-defs.svg#icon-mail"></use>
+                                </svg>
+                                barbershop@email.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="footer__text">working hours <br><span class="footer__info">Every day from 9:00 to 22:00</span></h3>
+            </div>
+        </div>
+        <div class="bottom">
+            <aside class="bottom__aside">
+                <p class="bottom__text">Copyright 2020</p>
+                <ul class="bottom__list">
+                    <li class="bottom__item">
+                        <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="bottom__link">Instagram</a>
+                    </li>
+                    <li class="bottom__item">
+                        <a href="https://www.youtube.com/" target="_blank" rel="nofollow" class="bottom__link">Youtube</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

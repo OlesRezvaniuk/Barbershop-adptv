@@ -1,0 +1,114 @@
+.close__button {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    top: 30px;
+    right: 30px;
+}
+// .close__icon {
+//     position: absolute;
+//     content: "";
+// }
+.menu {
+    &__button {
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: #9DA4BD;
+    }
+    &__ink {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: #9DA4BD;
+        text-decoration: none;
+    }
+    &__point {
+        &:last-child {
+            padding: 12px;
+        }
+    }
+    &__address  {
+        list-style: none;
+    }
+    &__top {
+        display: flex;
+        flex-direction: column;
+    }
+    &__nav {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        margin-top: 35px;
+        list-style: none;
+        // width: max-content;
+    }
+    &__item {
+        font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            /* identical to box height, or 167% */
+        
+            letter-spacing: 0.02em;
+        
+            color: #9DA4BD;
+        margin-bottom: 20px;
+    }
+    &__address {
+        list-style: none;
+        text-align: center;
+    }
+    &__button {
+        padding: 0;
+        margin: 0;
+        top: 30px;
+        right: 15px;
+        position: absolute;
+        content: "";
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    &__icon {
+        fill: $white-color;
+        display: block;
+    }
+}
+
+.backdrop {
+    background-color: white;
+}
+
+.menu__point--tel {
+    border: 1px solid #FF6C00;
+        border-radius: 25px;
+    margin-top: 20px;
+    margin: 0 auto;
+    padding: 15px;
+    display: block;
+    width: 190px;
+    // height: 40px;
+    justify-content: center;
+}
+
+.menu__point:first-child {
+    margin-bottom: 20px;
+}

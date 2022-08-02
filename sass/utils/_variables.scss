@@ -1,0 +1,42 @@
+// colors
+$active-color:#FF6C00;
+$heavy-color: #303030;
+$main-color: #555555;
+$white-color: #FFFFFF;
+$grey-color: #9DA4BD;
+$bg-light-color: #F7F7F7;
+$bg-dark-color: #191C26;
+
+
+// *,
+// *::before,
+// *::after {
+//     box-sizing: border-box;
+// }
+
+body {
+    // box-sizing: border-box;
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans';
+    font-style: normal;
+    
+    // background-color: grey;
+    // background-image: url("../img/Slider-3-609.jpg");
+    // background-position: 159px 0px;
+    // background-repeat: no-repeat;
+    // @media screen and (min-width: 1280px) {
+    //     background-image: url("../img/Slider-img-3-1071.jpg");
+    //     background-position: top 0 right 45px;
+    // }
+    
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
