@@ -94,6 +94,12 @@
 }
 
 .backdrop {
+        margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: white;
 }
 
